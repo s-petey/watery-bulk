@@ -96,7 +96,6 @@ function Body({ user }: { user: User }) {
           <ul>
             <ProductOrders user={user} />
           </ul>
-          <h2>User UIs</h2>
         </div>
       )}
     </div>

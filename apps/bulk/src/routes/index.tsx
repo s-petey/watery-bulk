@@ -107,7 +107,6 @@ function Body({
               </li>
             ))}
           </ul>
-          <h2>User UIs</h2>
         </div>
       )}
     </div>
