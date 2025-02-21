@@ -33,7 +33,6 @@ function useLoadAllData() {
       const productOrders = await getOrdersByUserId(user.id);
       const userUis = await getUserUis(user.id);
 
-      console.log({ userUis });
       const uiContent = await Promise.all(
         userUis.map((ui) => getUiContentById(ui.id))
       );
