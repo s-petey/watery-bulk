@@ -1,4 +1,4 @@
-import { simulateApiDelay } from "./helpers";
+import { simulateApiDelay, simulateSlowApiDelay } from "./helpers";
 
 export const funky = "give me that funky beat";
 
@@ -61,7 +61,7 @@ export const getUserById = async (userId: number): Promise<User> => {
 export const getOrdersByUserId = async (
   userId: number
 ): Promise<ProductOrder[]> => {
-  await simulateApiDelay();
+  await simulateSlowApiDelay();
   // Simulate an API call to load product orders
   return PRODUCT_ORDERS.filter((order) => order.userId === userId);
 };
