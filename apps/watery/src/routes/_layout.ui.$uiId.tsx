@@ -24,7 +24,7 @@ function RouteComponent() {
   );
 
   return (
-    <div>
+    <div className="text-center">
       <h2>{data.id}</h2>
       {data.content}
     </div>
